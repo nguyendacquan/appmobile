@@ -15,7 +15,7 @@ db.connect((err) => {
 });
 
 app.get('/api/data', (req, res) => {
-    db.query('SELECT * FROM your_table', (err, results) => {
+    db.query('SELECT * FROM trips_details', (err, results) => {
         if (err) throw err;
         res.json(results);
     });
